@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Eudoxus-Sans";
+  src: url(../assets/fonts/EudoxusSans-Regular.ttf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Eudoxus-Sans";
+  overflow: hidden;
+}
+.login-page .container {
+  height: 500px;
+  width: 450px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../assets/images/blur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(192, 192, 192, 0.58);
+}
+.login-page .container header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.login-page .container header img {
+  height: 80%;
+}
+.login-page .container .nav {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.login-page .container .nav .navbar {
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: grey;
+}
+.login-page .container .nav .navbar span {
+  width: 50%;
+  line-height: 125%;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.login-page .container .nav .navbar .active {
+  color: white;
+}
+.login-page .container .nav .underline {
+  width: 65%;
+  height: 2px;
+  background-color: rgba(60, 60, 60, 0.28);
+}
+.login-page .container .nav .underline .switch {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(97.11deg, #FEE5A6 3.94%, #FDB092 36.84%, rgba(249, 42, 42, 0.6) 74.25%, #FC80B8 108.01%);
+  transition: all 0.3s ease;
+}
+.login-page .container section {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.login-page .container section button {
+  height: 45px;
+  width: 55%;
+  color: white;
+  background: linear-gradient(223.14deg, #7B7B7B -107.72%, #0B0B0B 109.08%);
+  border: none;
+  cursor: pointer;
+}
+.login-page .container section button:hover {
+  background: linear-gradient(222.93deg, #FA00FF -73.65%, #F92A2A 44.08%, #FFF624 137.93%, #FFFFFF 203.22%);
+}
+.login-page .container .section-login form {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-page .container .section-login form .chart {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  color: grey;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(192, 192, 192, 0.58);
+}
+.login-page .container .section-login form .chart:hover {
+  color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(97.11deg, #FEE5A6 3.94%, #FDB092 36.84%, rgba(249, 42, 42, 0.6) 74.25%, #FC80B8 108.01%);
+}
+.login-page .container .section-login form .chart input {
+  height: 70%;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: white;
+}
+.login-page .container .section-login form .chart input:hover {
+  cursor: default;
+}
+.login-page .container .section-login form .chart input:focus {
+  outline: none;
+  color: white;
+}
+.login-page .container .section-login form .focused {
+  color: white;
+}
+.login-page .container .section-register .content {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-page .container .section-register .content p {
+  text-align: center;
+  color: white;
+}
+.login-page .container .section-register .content span {
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+}
+.login-page .container .section-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Login page</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="container">
+            <header>
+                <img src="assets/images/logo.png" alt="logo" />
+            </header>
+            <div class="nav">
+                <div class="navbar">
+                    <span class="btn-login active">Se connecter</span>
+                    <span class="btn-register">S'inscrire</span>
+                </div>
+                <div class="underline">
+                    <div class="switch"></div>
+                </div>
+            </div>
+            <section class="section-login section-active">
+                <form className="loginForm" id="loginForm" action="#" method="post">
+                    <div class="chart">
+                        <i class="fa-solid fa-user"></i>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Username"
+                            autocomplete="off"
+                            onchange=editChart()
+                        />
+                    </div>
+                    <div class="chart">
+                        <i class="fa-solid fa-key"></i>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            autocomplete="off"
+                            onchange=editChart()
+                        />
+                    </div>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </section>
+            <section class="section-register">
+                <div class="content">
+                    <p>
+                        Afin de pouvoir jouer sur notre serveur, il vous faut créer un compte sur 
+                        notre site internet <b>www.lsvibes.fr</b>
+                    </p>
+                    <button type="submit">S'inscrire</button>
+                    <span>En cliquant sur « s'inscrire », vous serez redirigé vers notre site internet</span>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
